@@ -1,0 +1,128 @@
+body{
+    height: 100%;
+    background-color: white;
+}
+.navbar-custom{
+    height: 92px;
+}
+.carouselZoom{
+    animation: zoom 10s;
+}
+@keyframes zoom {
+    from {
+    	transform: scale(1,1);
+    }
+
+    to {
+    	transform: scale(1.05,1.05);
+    }
+
+}
+
+@media (max-width:400px){
+    .snack{
+    margin-bottom: 10px ;
+   }
+ }
+
+.movie img{
+    width: 281px;
+    height: 166px;
+}
+.navbar-brand img{
+    height: 70px;
+    width: 70px;
+}
+
+.navbar-nav .snack{
+    transition: 0.5s;
+}
+
+.navbar-nav .snack:hover{
+    transform: rotate(-20deg);
+    transition: 0.5s;
+}
+
+
+.card-inner{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    margin: 0.5em;
+}
+
+.line{
+    height:  2px;
+    background-color: #7f0019;
+    /* width: 1381px; */
+    margin: auto;
+    opacity: 0.1;
+}
+
+
+.kids2 img{
+    width: 215px;
+    height: 125px;
+}
+
+@media (max-width:1400px){
+.kids2 img{
+ width: 3em;
+ height: 2em;
+ margin-top: 85px;
+ }
+}
+
+@media (max-width:400px){
+    .caption{
+     width: 10em;
+     height: 2em;
+    }
+}
+
+@media (max-width:400px){
+   .caption2{
+   width: 10em;
+   height: 3em;
+   }
+}
+
+@media (max-width:400px){
+   .caption3{
+   width: 10em;
+   height: 3em;
+  }
+}
+
+@media (max-width:400px){
+    .btc{
+    margin-left: -11px;
+
+   }
+ }
+
+ @media (max-width:400px){
+    .btc2{
+    margin-right: -11px;
+
+   }
+ }
+
+ @media (max-width:400px){
+    .movie img{
+    margin-left: 0;
+    margin-right: 0;
+
+   }
+ }
+
+ @media (max-width:400px){
+    .mod2 iframe{
+        height: 200px;
+        width: 380px;
+    
+   }
+ }
+ 

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIN PAGE</title>
+
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">    
+    </script>
+   
+   <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+  <!-- Navbar -->
+
+  <div class="navbar-custom d-flex p-0 justify-content-center fixed-top" style="background-color: #f5f5f5;">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="navbar/logo.png" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="movies.html">Movies</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Account
+                </a>
+                <ul class="dropdown-menu">
+                  <li style="display: inline-block;" ><a class="dropdown-item" href="" style="padding-right: 3px;">Argia  
+                    <img src="icon/crown2.png" style="height: 20px; width: 20px; margin-bottom: 10px; margin-right: 25px;">
+                    <img src="icon/lock.png" style="height: 20px; width: 20px; margin-bottom: 8px; margin-left: 15px;"></a></li>
+                  <li><a class="dropdown-item " href="#">Profiles</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#" style="color: #7f0019;">Sign Out</a></li>
+                </ul>
+              </li>
+              <li>
+                <a  href="#"data-bs-toggle="modal" data-bs-target="#snackModal">
+                  <img class = "snack" src="icon/snack.png" style="height: 40px ; width: 40px; margin-left: 20px;"></a>
+              </li>
+            </ul>
+          </div>
+         
+
+        </div>
+        
+    </nav>
+
+  
+  </div>
+
+
+
+
+<!-- Modal For Snack -->
+
+<div class="modal fade" id="snackModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close btn-close-signin-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+      <div class="container-sm">
+        <h6 class="text-center mb-4" style="color: #7f0019;">Put Your Order Here !</h6>
+      <div class="container mb-1" style="border-bottom: 1px solid #7f0019;">
+        <div class="row">
+          <div class="col" style="padding: 3px;">
+            <img src="icon/popcorn.png" style="height: 20px; width: 20px; margin-bottom: 3px;"><span style="margin-left: 5px;">Popcorn</span>
+          </div>
+          <div class="col" style="padding-left: 15px;">
+            <input style="width: 70px; height: 27px; margin-bottom: 8px" type="number">
+          </div>
+          <div class="col" style="width: 50px; padding: 5px;">
+            x pcs
+          </div>
+        </div>
+      </div>
+
+      <div class="container mb-1" style="border-bottom: 1px solid #7f0019">
+        <div class="row">
+          <div class="col" style="padding: 5px;">
+            <img src="icon/tea.png" style="height: 20px; width: 20px; margin-top: 3px;"><span style="margin-left: 5px;">Lemon Tea</span>
+          </div>
+          <div class="col" style="padding-left: 11px;">
+            <input style="width: 70px; height: 27px; margin-bottom: 8px; margin-top: 4px;" type="number">
+          </div>
+          <div class="col" style="width: 50px; padding: 5px;">
+            x pcs
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="border-bottom: 1px solid #7f0019">
+        <div class="row">
+          <div class="col" style="padding: 7px;">
+            <img src="icon/coffee.png" style="height: 20px; width: 20px; margin-top: -1px;"><span style="margin-left: 5px;">Coffee</span>
+          </div> 
+          <div class="col" style="padding-left: 8px;">
+            <input class="snack" style="width: 70px; height: 27px; margin-bottom: 8px; margin-top: 4px" type="number">
+          </div>
+          <div class="col" style="width: 50px; padding: 5px;">
+            x pcs
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class=" p-4">
+        <form>
+        <div class="row mb-3 w-100">
+          <label for="inputEmail3" class="col-4 col-form-label">Email</label>
+          <div class="col-8">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="mail@example.com">
+          </div>
+        </div>
+
+        <div class="row mb-3 w-100">
+          <label for="inputPassword3" class="col-4 col-form-label">Password</label>
+          <div class="col-8">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="password">
+          </div>
+        </div>
+
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-4 pt-0 text-decoration-underline">Delivery Options</legend>
+
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+              <label class="form-check-label" for="gridRadios1">
+                Go Send - Instant
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                Go Send - Same Day
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+
+        <div class="row mb-3">
+          <div class="col-sm-10 offset-sm-2">
+            
+          </div>
+        </div>
+        
+        <button type="submit" class="btn" style="background-color: #7f0019; color: white;">Buy</button>
+      </form>
+
+    </div>
+    
+    
+    </div>
+  </div>
+</div>
+
+<!-- Breadcrumbs -->
+
+<nav style="--bs-breadcrumb-divider: '>'; margin-top: 130px; margin-left: 25px;" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a style="text-decoration: none; color: #7f0019;" href="index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Movies</li>
+    </ol>
+  </nav>
+
+<!-- "Movies"-->
+
+<div class="movie">
+<div class="row row-cols-1 row-cols-md-4 g-md-2 p-md-0" style="margin-top: 25px; margin-left: 20px; margin-right: 5px;">
+  <div class="col">
+    <a  href="#"data-bs-toggle="modal" data-bs-target="#film3">
+      <img src="movies/top/satu.jpg" class="rounded-3" alt="..." style="height:221px ; width: 392px;">
+    </a>
+  </div>
+  <div class="col">
+    <a  href="#"data-bs-toggle="modal" data-bs-target="#film4">
+    <img src="movies/top/dua.jpg" class="rounded-3" alt="..." style="height:221px ; width: 392px;">
+    </a>
+ </div>
+  <div class="col">
+    <img src="movies/top/tiga.jpg" class="rounded-3" alt="..." style="height:221px ; width: 392px;">
+  </div>
+  <div class="col">
+    <img src="movies/top/empat.jpg" class="rounded-3" alt="..." style="height:221px ; width: 392px;">
+  </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-4 g-md-2 p-md-0" style="margin-top: 50px; margin-left: 20px; margin-right: 5px;">
+    <div class="col">
+        <img src="movies/top/lima.jpg" class="rounded-3" alt="..." style="height:221px ; width: 392px;">
+    </div>
+    <div class="col">
+      <img src="movies/top/enam.jpg" class="rounded-3" alt="..." style="height:221px ; width: 392px;">
+   </div>
+    <div class="col">
+      <img src="movies/top/tujuh.jpg" class="rounded-3" alt="..." style="height:221px ; width: 392px;">
+    </div>
+    <div class="col">
+      <img src="movies/top/delapan.jpg" class="rounded-3" alt="..." style="height:221px ; width: 392px;">
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-4 g-md-2 p-md-0" style="margin-top: 50px; margin-left: 20px; margin-right: 5px;">
+    <div class="col">
+        <img src="movies/top/sembilan.jpg" class="rounded-3" alt="..." style="height:221px ; width: 392px;">
+    </div>
+    <div class="col">
+      <img src="movies/top/sepuluh.jpg" class="rounded-3" alt="..." style="height:221px ; width: 392px;">
+   </div>
+    <div class="col">
+      <img src="movies/top/sebelas.jpg" class="rounded-3" alt="..." style="height:221px ; width: 392px;">
+    </div>
+    <div class="col">
+      <img src="movies/top/duabelas.jpg" class="rounded-3" alt="..." style="height:221px ; width: 392px;">
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-4 g-md-2 p-md-0" style="margin-top: 50px; margin-left: 20px; margin-right: 5px;">
+    <div class="col">
+        <img src="movies/series/explore.jpg" class="rounded-3" alt="..." style="height:221px ; width: 392px;">
+    </div>
+    <div class="col">
+      <img src="movies/series/explore-1.jpg" class="rounded-3" alt="..." style="height:221px ; width: 392px;">
+   </div>
+    <div class="col">
+      <img src="movies/series/explore-2.jpg" class="rounded-3" alt="..." style="height:221px ; width: 392px;">
+    </div>
+    <div class="col">
+      <img src="movies/series/explore-3.jpg" class="rounded-3" alt="..." style="height:221px ; width: 392px;">
+    </div>
+  </div>
+</div>
+
+
+<!-- modal -->
+<div class="modal fade" id="film3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      
+      <div class="mod2">
+      <div class="modal-content">
+      
+        <iframe width="560" height="315"
+        src="https://www.youtube-nocookie.com/embed/3u7EIiohs6U">
+        </iframe>
+  
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="film4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="mod2">
+      <div class="modal-content">
+      
+        <iframe width="560" height="315"
+        src="https://www.youtube-nocookie.com/embed/oqM0ZYnA02g">
+        </iframe>
+  
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- Footer -->
+
+<footer class="form" style="margin-top: 50px; padding-top: 50px; background-color: #f5f5f5;">
+  <h5 class="text-center mb-1">How Can We Help ?</h5>
+  <h6 class=" text-center mb-4" style="color: grey;">You may contact us at our <a href="">Twitter Page</a>, or write to us below.</h6>
+  
+<div class="min-vh-50 min-vw-50">
+  
+<form>
+ 
+  <div class="mb-3 w-50 m-auto">
+    <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="e.g: Sasha Fierce">
+  </div>
+  <div class="mb-3 w-50 m-auto">
+    <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="mail@example.com">
+  </div>
+  <div class="mb-3 w-50 m-auto">
+    <label for="exampleFormControlTextarea1" class="form-label">Comment</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="What do you feel about us ?"></textarea>
+  </div>
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn mb-5" style="background-color: #7f0019; color: white;" type="button">Submit</button>
+  </div>
+</div>
+</form>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
